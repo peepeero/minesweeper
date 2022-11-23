@@ -48,12 +48,13 @@ namespace Minesweeper
                         if (this->getGridNumberAt(std::make_pair(xindex, yindex)) == 9)
                         {
                             std::cout << "\033[31m";
+                            std::cout << "💣"; 
                         }
                         else
                         {
                             std::cout << "\033[34m";
+                            std::cout << y << " ";
                         }
-                        std::cout << y << " ";
                         std::cout << "\033[0m";
                     }
                     else
